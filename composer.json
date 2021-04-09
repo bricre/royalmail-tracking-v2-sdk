@@ -1,0 +1,45 @@
+{
+  "name": "bricre/royalmail-tracking-v2-sdk",
+  "description": "Royal Mail Tracking (for Server-side app) v2 REST API SDK generated from swagger specification",
+  "keywords": [
+    "RoyalMail",
+    "Royal Mail",
+    "Tracking",
+    "SDK",
+    "API",
+    "REST"
+  ],
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Allan Sun",
+      "email": "allan.sun@bricre.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4|^8.0",
+    "allansun/openapi-runtime": "^2.0.7"
+  },
+  "require-dev": {
+    "allansun/openapi-code-generator": "^0.2.3",
+    "phpunit/phpunit": "^9.5.4",
+    "guzzlehttp/guzzle": "^v7.3.0",
+    "phpspec/prophecy": "^1.12",
+    "phpspec/prophecy-phpunit": "^2.0",
+    "monolog/monolog": "^2.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RoyalMail\\SDK\\V2Tracking\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RoyalMail\\SDK\\V2Tracking\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "generate": "vendor/bin/openapi-code-generator generate -c ./code-generator-config.php -f ./swagger.yaml"
+  }
+}
