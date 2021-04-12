@@ -19,7 +19,7 @@
   ],
   "require": {
     "php": ">=7.4|^8.0",
-    "allansun/openapi-runtime": "^2.0.7"
+    "allansun/openapi-runtime": "^2.1"
   },
   "require-dev": {
     "allansun/openapi-code-generator": "^0.2.3",
