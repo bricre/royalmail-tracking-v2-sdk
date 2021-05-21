@@ -25,7 +25,7 @@ class API extends AbstractAPI
      */
     public function events($mailPieceId)
     {
-        return $this->client->request('events', 'get', "mailpieces/v2/{$mailPieceId}/events",
+        return $this->client->request('events', 'GET', "mailpieces/v2/{$mailPieceId}/events",
             [
             ]
         );
@@ -41,7 +41,7 @@ class API extends AbstractAPI
      */
     public function summary(array $queries = [])
     {
-        return $this->client->request('summary', 'get', 'mailpieces/v2/summary',
+        return $this->client->request('summary', 'GET', 'mailpieces/v2/summary',
             [
                 'query' => $queries,
             ]
@@ -57,7 +57,7 @@ class API extends AbstractAPI
      */
     public function signature($mailPieceId)
     {
-        return $this->client->request('signature', 'get', "mailpieces/v2/{$mailPieceId}/signature",
+        return $this->client->request('signature', 'GET', "mailpieces/v2/{$mailPieceId}/signature",
             [
             ]
         );
